@@ -36,6 +36,8 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
+      - name: Aguardar pacote
+        run: sleep 30
       - name: Publicar
         id: deployment
         uses: actions/deploy-pages@v4
